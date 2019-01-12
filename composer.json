@@ -1,0 +1,10 @@
+{
+    "name": "commanderZiltoid/lempmetrics",
+    "description": "Package used to display various server metrics of a LEMP stack, and search access logs",
+    "autoload": {
+        "psr-4":{
+            "CommanderZiltoid\\lempmetrics\\": "src/"
+        }
+    },
+    "require":{}
+}
