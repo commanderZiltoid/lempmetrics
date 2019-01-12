@@ -60,7 +60,7 @@ class Metrics {
         
         $last_idle = 0;
         $last_total = 0;
-        $return_val;
+        $return_val = 0;
         
         for($i = 0; $i < 2; $i++){
             $cpu = self::_parseProcStatFile();
@@ -354,7 +354,7 @@ class Metrics {
         $this->_clear_access_log();
         
         foreach($this->_log_lines as $line){
-            $r = json_decode($line);
+            $r = new \LogEntry($line);
             if(($r != '')){
                 $tmp = [];
                 foreach($this->_callbacks as $cb){
