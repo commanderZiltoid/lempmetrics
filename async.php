@@ -1,6 +1,6 @@
 <?php require __DIR__ . '/vendor/autoload.php';
 
-use CommanderZiltoid\LEMPMetrics\Metrics;
+use CommanderZiltoid\lempmetrics\Metrics;
 $metrics = new Metrics();
 
 

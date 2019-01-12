@@ -1,6 +1,6 @@
 <?php
 
-namespace CommanderZiltoid\LEMPMetrics;
+namespace CommanderZiltoid\lempmetrics;
 
 class Metrics {
     
