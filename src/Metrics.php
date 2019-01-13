@@ -354,7 +354,7 @@ class Metrics {
         $this->_clear_access_log();
         
         foreach($this->_log_lines as $line){
-            $r = new \LogEntry($line);
+            $r = new LogEntry($line);
             if(($r != '')){
                 $tmp = [];
                 foreach($this->_callbacks as $cb){
