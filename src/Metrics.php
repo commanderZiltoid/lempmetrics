@@ -403,6 +403,9 @@ class Metrics {
     }
     
     private function _format_log_time($t){
+        if(!$t){
+            return '';
+        }
         $e1 = explode('/', $t);
         $e2 = explode(':', $e1[2]);
         $year   = $e2[0];
